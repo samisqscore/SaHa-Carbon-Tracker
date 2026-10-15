@@ -1,0 +1,7 @@
+Item Code,Description,Quantity,Unit,Category,Phase,Material
+1.01,Ready-mix concrete M30 foundation grade,450,m3,Concrete,Substructure,Concrete (M30)
+1.02,High-yield reinforcement steel TMT bars Fe500,65000,kg,Steel,Substructure,Reinforcement Steel
+2.01,Standard red clay bricks for perimeter masonry,120000,kg,Masonry,Superstructure,Brick (Red Clay)
+2.02,Float glass double glazed architectural facade units,4500,kg,Glazing,Façade,Glass (Float)
+3.01,Structural steel framing sections Grade 50,28000,kg,Steel,Superstructure,Reinforcement Steel
+3.02,Ready-mix concrete C30/37 for slabs and columns,820,m3,Concrete,Superstructure,Concrete (C30/37)

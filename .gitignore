@@ -1,0 +1,61 @@
+# Dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# Build and output artifacts
+dist
+server/public
+*.tar.gz
+vite.config.ts.*
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment variables & secrets (CRITICAL: Never commit active credentials)
+.env
+.env.*
+.env.legacy
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+SaHa client secret.json
+
+# IDE and agent state
+.agent/
+.vscode/
+.idea/
+
+# Uploads & Temporary files
+uploads/
+Error Screenshots/
+attached_assets/
+check_log*.txt
+*.log
+
+# Sensitive/Proprietary test data & binary documents
+*.pdf
+*.numbers
+*.xlsx
+BOQ for Testing/
+test_boq.csv
+berger_boq.csv
+test_emissions_import.csv
+Test Data/
+debug_*.ts
+scripts/verify_berger_backend.ts
+scripts/test_real_boqs.ts
+project_analysis.md
+project_status_review.md.resolved
+replit.md
+
+
+

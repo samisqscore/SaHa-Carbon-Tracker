@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 11% 98%; /* #F5F7FA */
+  --foreground: 222 84% 5%; /* #161616 */
+  --muted: 210 11% 93%; /* #E5E7EB */
+  --muted-foreground: 215 16% 47%; /* #6B7280 */
+  --popover: 0 0% 100%; /* #FFFFFF */
+  --popover-foreground: 222 84% 5%; /* #161616 */
+  --card: 0 0% 100%; /* #FFFFFF */
+  --card-foreground: 222 84% 5%; /* #161616 */
+  --border: 214 32% 91%; /* #E0E0E0 */
+  --input: 214 32% 91%; /* #E0E0E0 */
+  --primary: 217 91% 60%; /* #0F62FE */
+  --primary-foreground: 216 100% 99%; /* #FEFEFF */
+  --secondary: 210 11% 93%; /* #E5E7EB */
+  --secondary-foreground: 222 84% 5%; /* #161616 */
+  --accent: 210 11% 93%; /* #E5E7EB */
+  --accent-foreground: 222 84% 5%; /* #161616 */
+  --destructive: 0 84% 60%; /* #DA1E28 */
+  --destructive-foreground: 60 9% 98%; /* #FEFCF9 */
+  --ring: 217 91% 60%; /* #0F62FE */
+  --radius: 0.5rem;
+  
+  /* Chart colors */
+  --chart-1: 217 91% 60%; /* #0F62FE - Blue */
+  --chart-2: 142 76% 36%; /* #198038 - Green */
+  --chart-3: 25 95% 53%; /* #FF832B - Orange */
+  --chart-4: 0 84% 60%; /* #DA1E28 - Red */
+  --chart-5: 269 97% 85%; /* #D4BBFF - Purple */
+  
+  /* Sidebar colors */
+  --sidebar-background: 0 0% 100%; /* #FFFFFF */
+  --sidebar-foreground: 222 84% 5%; /* #161616 */
+  --sidebar-primary: 217 91% 60%; /* #0F62FE */
+  --sidebar-primary-foreground: 216 100% 99%; /* #FEFEFF */
+  --sidebar-accent: 210 11% 93%; /* #E5E7EB */
+  --sidebar-accent-foreground: 222 84% 5%; /* #161616 */
+  --sidebar-border: 214 32% 91%; /* #E0E0E0 */
+  --sidebar-ring: 217 91% 60%; /* #0F62FE */
+}
+
+/* Mobile-first responsive utilities */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Touch-friendly interactions */
+.touch-manipulation {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Ensure proper mobile scrolling */
+body {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+/* Mobile-optimized focus states */
+@media (hover: none) and (pointer: coarse) {
+  button:hover {
+    background-color: initial;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+}
+
+.dark {
+  --background: 222 84% 5%; /* #161616 */
+  --foreground: 210 11% 98%; /* #F5F7FA */
+  --muted: 217 19% 11%; /* #262626 */
+  --muted-foreground: 215 14% 65%; /* #8D8D8D */
+  --popover: 222 84% 5%; /* #161616 */
+  --popover-foreground: 210 11% 98%; /* #F5F7FA */
+  --card: 222 84% 5%; /* #161616 */
+  --card-foreground: 210 11% 98%; /* #F5F7FA */
+  --border: 217 19% 16%; /* #393939 */
+  --input: 217 19% 16%; /* #393939 */
+  --primary: 217 91% 60%; /* #0F62FE */
+  --primary-foreground: 216 100% 99%; /* #FEFEFF */
+  --secondary: 217 19% 16%; /* #393939 */
+  --secondary-foreground: 210 11% 98%; /* #F5F7FA */
+  --accent: 217 19% 16%; /* #393939 */
+  --accent-foreground: 210 11% 98%; /* #F5F7FA */
+  --destructive: 0 84% 60%; /* #DA1E28 */
+  --destructive-foreground: 60 9% 98%; /* #FEFCF9 */
+  --ring: 217 91% 60%; /* #0F62FE */
+  
+  /* Sidebar colors for dark mode */
+  --sidebar-background: 222 84% 5%; /* #161616 */
+  --sidebar-foreground: 210 11% 98%; /* #F5F7FA */
+  --sidebar-primary: 217 91% 60%; /* #0F62FE */
+  --sidebar-primary-foreground: 216 100% 99%; /* #FEFEFF */
+  --sidebar-accent: 217 19% 16%; /* #393939 */
+  --sidebar-accent-foreground: 210 11% 98%; /* #F5F7FA */
+  --sidebar-border: 217 19% 16%; /* #393939 */
+  --sidebar-ring: 217 91% 60%; /* #0F62FE */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-md;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground;
+  }
+}
+
+@layer components {
+  /* Loading animation for skeleton states */
+  .skeleton {
+    background: linear-gradient(90deg, hsl(var(--muted)) 25%, hsl(var(--border)) 50%, hsl(var(--muted)) 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+  }
+  
+  @keyframes loading {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  
+  /* Hover effects */
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+  }
+  
+  /* Fade in animation used by dashboard drill-down transitions */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to   { opacity: 1; transform: translateY(0);   }
+  }
+}
+
+
+/* Custom utility classes for carbon design system */
+@layer utilities {
+  .text-carbon-blue { color: #0F62FE; }
+  .text-carbon-green { color: #198038; }
+  .text-carbon-orange { color: #FF832B; }
+  .text-carbon-red { color: #DA1E28; }
+  
+  .bg-carbon-blue { background-color: #0F62FE; }
+  .bg-carbon-green { background-color: #198038; }
+  .bg-carbon-orange { background-color: #FF832B; }
+  .bg-carbon-red { background-color: #DA1E28; }
+  
+  .border-carbon-blue { border-color: #0F62FE; }
+  .border-carbon-green { border-color: #198038; }
+  .border-carbon-orange { border-color: #FF832B; }
+  .border-carbon-red { border-color: #DA1E28; }
+}
