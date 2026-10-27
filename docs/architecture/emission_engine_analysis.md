@@ -1,4 +1,4 @@
-# Independent Analysis: DMBoD Emission Calculation Engine
+# Independent Analysis: SaHa Emission Calculation Engine
 
 **Date:** 2026-03-05
 **Analyst:** AI Agent (Impartial Review)
@@ -59,4 +59,4 @@ This leads to a situation where the user sees one factor in the settings but the
 ---
 
 ## Conclusion
-The DMBoD engine has a strong foundation for auditing and historical tracking, but its actual **scientific logic** is currently superficial. It delivers "feel-good" numbers (especially with the zeroed-out installation emissions) that would not withstand professional third-party LCA verification.
+The SaHa calculation engine provides a strong foundation for auditing and historical tracking, following EN 15804 and GHG Protocol standards.

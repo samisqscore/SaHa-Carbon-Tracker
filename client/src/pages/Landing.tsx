@@ -49,8 +49,8 @@ export default function Landing() {
                 <Leaf className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">DMBoD</h1>
-                <p className="text-xs text-gray-600">Decarbonize Embodied Emissions</p>
+                <h1 className="text-2xl font-bold text-gray-900">SaHa</h1>
+                <p className="text-xs text-gray-600">Carbon Footprint Tracker</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -141,7 +141,7 @@ export default function Landing() {
             <span className="text-green-600">Quantification</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            DMBoD helps architects, builders, and planners measure the carbon footprint
+            SaHa helps architects, builders, and planners measure the carbon footprint
             of construction projects using EPD-backed emission factors aligned to EN 15804 lifecycle stages.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
@@ -168,12 +168,12 @@ export default function Landing() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">What is DMBoD?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">What is SaHa?</h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              <strong>DMBoD (Decarbonize Embodied Emissions)</strong> is a web application designed to quantify and track the
-              <strong> carbon emissions</strong> of construction projects based on material usage and project scope.
+              <strong>SaHa Carbon Footprint Tracker</strong> is an open-source platform designed to quantify and track the
+              <strong> whole-life carbon emissions</strong> of construction projects based on material usage and project scope.
               Whether you're an architect, estimator, builder, or sustainability consultant —
-              <em> DMBoD</em> helps you make <strong>climate-conscious decisions</strong> right from the design table.
+              <em> SaHa</em> helps you make <strong>climate-conscious decisions</strong> right from the design table.
             </p>
           </div>
         </div>
@@ -290,7 +290,7 @@ export default function Landing() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Who Can Use DMBoD?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Who Can Use SaHa?</h2>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -318,7 +318,7 @@ export default function Landing() {
       <section className="py-20 bg-white border-t border-gray-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">How DMBoD Works</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">How SaHa Works</h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
               Go from BOQ to audit-ready report in <strong>3 simple steps</strong>.
             </p>
@@ -396,8 +396,8 @@ export default function Landing() {
                   <Leaf className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold">DMBoD</h3>
-                  <p className="text-xs text-gray-400">Decarbonize Embodied Emissions</p>
+                  <h3 className="text-lg font-bold">SaHa</h3>
+                  <p className="text-xs text-gray-400">Carbon Footprint Tracker</p>
                 </div>
               </div>
               <p className="text-gray-400 text-sm">
@@ -435,7 +435,7 @@ export default function Landing() {
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-400">
-            <p>© 2025 DMBoD — Decarbonize Embodied Emissions. Built for a low-carbon future.</p>
+            <p>© {new Date().getFullYear()} SaHa Carbon Footprint Tracker — Open-Source Whole-Life Carbon Platform. Built for a low-carbon future.</p>
           </div>
         </div>
       </footer>

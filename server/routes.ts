@@ -1374,11 +1374,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // ─────────────────────────────────────────────────────────────────────────
   // Phase 3: BOQ Template Download
-  // GET /api/boq/template — Returns a standard DMBoD XLSX template file.
+  // GET /api/boq/template — Returns a standard SaHa CSV template file.
   // ─────────────────────────────────────────────────────────────────────────
   /**
    * @route GET /api/boq/template
-   * @description Generates and streams a standard DMBoD BOQ CSV template.
+   * @description Generates and streams a standard SaHa BOQ CSV template.
    * The template columns are: Material, Quantity, Unit, LifecycleStage.
    * Users fill this template and upload it via the BOQ Import Wizard.
    * @access Authenticated users
@@ -1404,7 +1404,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Set headers for CSV download
       res.setHeader("Content-Type", "text/csv");
       // The frontend will override this filename, but it's good practice to set a default
-      res.setHeader("Content-Disposition", `attachment; filename="DMBoD_BOQ_Template.csv"`);
+      res.setHeader("Content-Disposition", `attachment; filename="SaHa_BOQ_Template.csv"`);
       res.status(200).send(csvContent);
     } catch (err: any) {
       console.error("Template generation error:", err);
@@ -1984,7 +1984,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     ].join("\n");
 
     res.setHeader('Content-Type', 'text/csv; charset=utf-16');
-    res.setHeader('Content-Disposition', 'attachment; filename=DMBoD_EmissionFactors_Template.csv');
+    res.setHeader('Content-Disposition', 'attachment; filename=SaHa_EmissionFactors_Template.csv');
     res.status(200).send(csvContent);
   });
 

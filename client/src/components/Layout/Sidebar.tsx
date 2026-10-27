@@ -88,8 +88,8 @@ export default function Sidebar() {
             <Leaf className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
           </div>
           <div className="min-w-0 flex-1">
-            <h1 className="font-bold text-lg sm:text-xl text-gray-900 truncate">DMBoD</h1>
-            <p className="text-xs sm:text-sm text-gray-600 truncate">Embodied Carbon Intelligence</p>
+            <h1 className="font-bold text-lg sm:text-xl text-gray-900 truncate">SaHa</h1>
+            <p className="text-xs sm:text-sm text-gray-600 truncate">Carbon Footprint Tracker</p>
           </div>
         </div>
 

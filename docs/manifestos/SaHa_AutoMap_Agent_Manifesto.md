@@ -1,4 +1,4 @@
-# DMBoD — Project Material Auto-Mapping
+# SaHa — Project Material Auto-Mapping
 ## Agent Implementation Manifesto
 **Version:** 1.0 | **Date:** 1st March 2026 | **Status:** ✅ Implemented
 
@@ -395,5 +395,4 @@ This feature is complete when:
 
 ---
 
-*Companion documents: DMBoD_Datasource_REVIEW_PLAN_v2.docx (datasource lifecycle),
-DMBoD_Datasource_Agent_Manifesto.md (datasource upload implementation).*
+*Companion documents: SaHa_Datasource_Agent_Manifesto.md (datasource upload implementation).*

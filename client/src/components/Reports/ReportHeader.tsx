@@ -19,10 +19,10 @@ export function ReportHeader({ project, reportDate = new Date() }: ReportHeaderP
                     </div>
                     <div>
                         <h1 className="text-2xl font-bold text-gray-900 tracking-tight">
-                            DMBoD Carbon Intelligence
+                            SaHa Carbon Footprint Tracker
                         </h1>
                         <p className="text-sm text-gray-500 font-medium">
-                            DMBoD · Embodied Carbon Intelligence Report
+                            SaHa · Whole-Life Carbon Intelligence Report
                         </p>
                     </div>
                 </div>

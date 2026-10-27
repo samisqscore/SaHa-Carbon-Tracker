@@ -1,13 +1,13 @@
-# DMBoD Dataset Management: Architectural Overview & Enhancement Proposal
+# SaHa Dataset Management: Architectural Overview & Enhancement Proposal
 
-**Prepared for:** DMBoD Project Architect Review
-**Date:** March 1, 2026
+**Prepared for:** SaHa Carbon Footprint Tracker Architecture
+**Date:** March 1, 2026 (Updated for SaHa Open Source Release)
 
 ---
 
 ## 🏗️ 1. Project Context & Current Architecture
 
-The **DMBoD** (Decision Modeler for Building Decarbonization) platform utilizes a **Hybrid Architecture** for its primary carbon data backbone. This shift away from legacy (`materials`, `material_emission_factors`) ensures strong multi-tenant separation while allowing global defaults.
+The **SaHa Carbon Footprint Tracker** platform utilizes a **Hybrid Architecture** for its primary carbon data backbone. This shift away from legacy (`materials`, `material_emission_factors`) ensures strong multi-tenant separation while allowing global defaults.
 
 ### Hybrid Architecture Key Principles
 1. **Global/System Datasets:** Publicly available emission factors (e.g., ICE v3, India BEI) maintained by system administrators. These are read-only for organizations.

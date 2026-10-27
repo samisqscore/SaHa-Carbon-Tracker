@@ -38,9 +38,9 @@ export default function OnboardingWizard() {
                 <CardHeader className="space-y-1">
                     <div className="flex items-center gap-2 text-primary mb-2">
                         <Building2 className="w-6 h-6" />
-                        <span className="font-bold tracking-tight">DMBoD</span>
+                        <span className="font-bold tracking-tight">SaHa</span>
                     </div>
-                    <CardTitle className="text-2xl">Welcome to DMBoD</CardTitle>
+                    <CardTitle className="text-2xl">Welcome to SaHa</CardTitle>
                     <CardDescription>
                         Let's set up your organization to start measuring embodied carbon.
                     </CardDescription>

@@ -106,7 +106,7 @@ export function BOQImportWizard({ projectId, open, onOpenChange, embedded = fals
         }
     };
 
-    /** Download the standard DMBoD BOQ template — generated client-side, no server call needed */
+    /** Download the standard SaHa BOQ template — generated client-side, no server call needed */
     const handleDownloadTemplate = () => {
         // Generate CSV entirely in the browser — avoids auth, CSP, and network issues
         const BOM = '\uFEFF'; // UTF-8 BOM ensures Excel opens file correctly without encoding errors
@@ -124,7 +124,7 @@ export function BOQImportWizard({ projectId, open, onOpenChange, embedded = fals
         const a = document.createElement('a');
         a.href = url;
         const dateStr = new Date().toISOString().split('T')[0];
-        a.download = `DMBoD_BoQ_Template_${dateStr}.csv`;
+        a.download = `SaHa_BoQ_Template_${dateStr}.csv`;
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
@@ -449,7 +449,7 @@ export function BOQImportWizard({ projectId, open, onOpenChange, embedded = fals
                             <div className="p-4 rounded-lg border bg-blue-50 border-blue-200 text-sm mt-4">
                                 <div className="flex items-start justify-between gap-4">
                                     <div>
-                                        <h4 className="font-semibold mb-2">Standard Import — DMBoD Template</h4>
+                                        <h4 className="font-semibold mb-2">Standard Import — SaHa Template</h4>
                                         <ul className="list-disc pl-4 space-y-1 text-gray-600">
                                             <li>Download the template below and fill in your materials.</li>
                                             <li>Required columns: <strong>Material, Quantity, Unit</strong></li>

@@ -230,7 +230,7 @@ function ReportDocument({ project, emissions, lifecycleData, generatedAt }: Repo
 
             // ── Page Header (fixed) ──
             React.createElement(View, { style: styles.pageHeader, fixed: true },
-                React.createElement(Text, { style: { fontSize: 8, fontFamily: "Helvetica-Bold", color: BRAND.primary } }, "DMBoD Carbon Intelligence Platform"),
+                React.createElement(Text, { style: { fontSize: 8, fontFamily: "Helvetica-Bold", color: BRAND.primary } }, "SaHa Carbon Footprint Tracker"),
                 React.createElement(Text, { style: styles.footerText }, generatedAt)
             ),
 
@@ -446,7 +446,7 @@ function ReportDocument({ project, emissions, lifecycleData, generatedAt }: Repo
                     ...[
                         ["Calculation", "Embodied carbon = Quantity × Emission Factor (kgCO₂e/unit). Transport (A4) emissions use mode-specific factors: Road 0.062 · Rail 0.022 · Ship 0.015 · Air 0.602 kgCO₂e/tonne-km, applied to supplier distance per material. Installation (A5) uses category-level energy benchmarks per EN 15804. Waste uplift applied only when explicitly set — no silent defaults."],
                         ["Calculation Confidence", `${mappedPct}% of materials are mapped to emission factors (${mappedMats.length}/${materials.length}). Unmapped materials contribute zero and are excluded from totals.`],
-                        ["Factor Source", "DMBoD dataset aggregating ICE Database v3.0 (Bath University), Ecoinvent v3.x, and Environmental Product Declarations (EPDs) via the DMBoD EPD Sync."],
+                        ["Factor Source", "SaHa dataset aggregating ICE Database v3.0 (Bath University), India BEE/BEI, Ecoinvent v3.x, and Environmental Product Declarations (EPDs) via the SaHa EPD Sync."],
                         ["Lifecycle Scope", "A1–A3 as minimum (product stage). A4–A5 (construction), B (in-use replacements), C1–C4 (end-of-life) included where data available. Module D shown separately, not added to total."],
                         ["Exclusions", "Operational carbon, MEP systems unless added, biogenic sequestration unless included in EPD. AI material matches are indicative — verify before formal submission."],
                         ["Disclaimer", "This report does not constitute a verified LCA, EPD, BREEAM/LEED submission document. All figures are indicative only."],

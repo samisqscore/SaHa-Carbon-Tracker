@@ -1,4 +1,4 @@
-# DMBoD — Dashboard Redesign & Analytics
+# SaHa — Dashboard Redesign & Analytics
 ## Agent Implementation Manifesto
 **Version:** 1.1 | **Date:** March 2026 | **Status:** Implementation Complete ✅
 
@@ -530,5 +530,5 @@ This feature is complete when:
 ---
 
 *Companion manifesto documents:*
-- *DMBoD_Datasource_Agent_Manifesto.md — datasource upload implementation*
-- *DMBoD_AutoMap_Agent_Manifesto.md — project material auto-mapping*
+- *SaHa_Datasource_Agent_Manifesto.md — datasource upload implementation*
+- *SaHa_AutoMap_Agent_Manifesto.md — project material auto-mapping*

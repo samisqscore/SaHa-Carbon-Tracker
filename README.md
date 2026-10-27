@@ -149,6 +149,12 @@ Please also review our [Code of Conduct](CODE_OF_CONDUCT.md) and [Security Polic
 
 ---
 
+## 📜 Project Heritage & Origins
+
+**SaHa Carbon Footprint Tracker** was initially conceived and developed under the working title **DMBoD** (*Decision Modeler for Building Decarbonization* / *Decarbonize Embodied Emissions*). As the platform matured into a comprehensive whole-life carbon assessment suite, the codebase was sanitized and transitioned to open source under the **SaHa** brand. Historical documentation, architectural manifestos, and earlier commit logs may reference DMBoD as the predecessor project name.
+
+---
+
 ## 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.

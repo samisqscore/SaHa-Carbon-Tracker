@@ -1,7 +1,10 @@
-# DMBoD: User Manual
-**Decision Modeler for Building Decarbonization**
+# SaHa Carbon Footprint Tracker: User Manual
+**Whole-Life Carbon Intelligence for the Built Environment**
 
-Welcome to DMBoD, the professional-grade carbon intelligence platform designed for Architects, Sustainability Consultants, and Project Managers. This manual provides a comprehensive guide to navigating the platform, calculating embodied carbon, and generating decision-grade reports for LEED, BREEAM, and RICS compliance.
+> [!NOTE]
+> **Project Heritage Note**: *SaHa Carbon Footprint Tracker was previously developed under the working title **DMBoD** (Decision Modeler for Building Decarbonization). All features and documentation are now unified under the SaHa open-source project.*
+
+Welcome to **SaHa Carbon Footprint Tracker**, the professional-grade open-source carbon intelligence platform designed for Architects, Sustainability Consultants, Structural Engineers, and Project Managers. This manual provides a comprehensive guide to navigating the platform, calculating embodied carbon, and generating decision-grade reports for LEED, BREEAM, and RICS compliance.
 
 ---
 
@@ -55,7 +58,7 @@ The Dashboard is your organization’s command center. It tracks decarbonization
 - **Drill-Down Panels**: Interactive charts showing emissions grouped by lifecycle stage (A1-D) or material category (Concrete, Steel, Timber, etc.).
 
 ### 2. Project & Phase Management
-DMBoD organizes materials into **Project Phases** to align with construction schedules.
+SaHa organizes materials into **Project Phases** to align with construction schedules.
 
 - **Creating Phases**: By default, each project includes Foundation, Superstructure, Envelope, Interiors, and MEP.
 - **Custom Phases**: You can add or rename phases to match your specific procurement package.
@@ -84,7 +87,7 @@ This is the "Engine Room" of the platform, where physical quantities are convert
 > **[SCREENSHOT: EDIT MATERIAL MODAL]** - *A screenshot of the dialog for editing an individual material item, showing Transport and Waste fields.*
 
 ### 5. Interpreting Carbon Intelligence Reports
-DMBoD reports are "narrative-driven," meaning they explain the data in business-friendly language.
+SaHa reports are "narrative-driven," meaning they explain the data in business-friendly language.
 
 - **Narrative Insights**: Descriptive sentences that explain *why* your project's emissions are high and where the greatest reduction opportunities lie.
 - **Benchmark Scale**: A color-coded scale (Excellent to High) showing where your project sits relative to best-practice targets for your building type.
@@ -102,14 +105,14 @@ Effective decarbonization is a team effort. Use the **Organization Dashboard** t
 > [!NOTE]
 > **[SCREENSHOT: ORGANIZATION DASHBOARD]** - *A screenshot showing the 'General Details' and 'Team Members' tabs in Organization Settings.*
 
-- **Onboarding Members**: Invite colleagues by email. DMBoD enforces a "Closed-Loop" security model, meaning users must be approved by an administrator before they can access project data.
+- **Onboarding Members**: Invite colleagues by email. SaHa enforces a "Closed-Loop" security model, meaning users must be approved by an administrator before they can access project data.
 - **User Roles**:
     - **Organization Admin**: Full control over settings, members, and custom emission factors.
     - **Estimator (Standard User)**: Can create projects, import BOQs, and perform material mapping.
     - **Viewer**: Read-only access to dashboards and reports (ideal for senior management or external auditors).
 
 ### 2. Managing Data Sources (The Carbon Catalog)
-DMBoD operates on a "Hybrid Data Model" combining global standards with your organization's specific intelligence.
+SaHa operates on a "Hybrid Data Model" combining global standards with your organization's specific intelligence.
 
 - **Global Data Sources**: Access a pre-loaded library of thousands of emission factors from the **ICE Database**, **India BEI**, and international **EPD** registries.
 - **EPD Data Sync**: For advanced users, the **EPD Sync** tool allows you to mirror the latest approved factors from our central database with a single click.
@@ -130,7 +133,7 @@ Platform administrators have high-level oversight of all system activities.
 ## Part 4: Professional Standards & Troubleshooting
 
 ### Compliance & Standards
-DMBoD calculations are designed to support professional sustainability assessments:
+SaHa calculations are designed to support professional sustainability assessments:
 - **RICS Professional Statement**: Following the RICS "Whole life carbon assessment for the built environment."
 - **EN 15804**: Material factors are categorized by lifecycle stages A1-A3, A4-A5, B, C, and D.
 - **LEED/BREEAM**: Reports provide the required data points for the "Material & Resources" credits in major building certifications.
@@ -146,4 +149,4 @@ DMBoD calculations are designed to support professional sustainability assessmen
 ---
 
 ### Need Further Assistance?
-For technical support or to suggest a new emission factor, please contact your Organization Administrator or visit the DMBoD Support Portal.
+For technical support or to suggest a new emission factor, please contact your Organization Administrator or open an issue on the SaHa GitHub repository.

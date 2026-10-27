@@ -29,7 +29,7 @@ export default function PendingApproval() {
             <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center">
               <Leaf className="w-5 h-5 text-white" />
             </div>
-            <span className="text-lg font-bold text-gray-900">DMBoD</span>
+            <span className="text-lg font-bold text-gray-900">SaHa</span>
           </div>
 
           <div className="mx-auto w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
